@@ -14,17 +14,34 @@ let btn1 = document.getElementById('btn1')
 let R1 = document.getElementById('rd1')
 let R2 = document.getElementById('rd2') 
 
-btn1.onclick = function(){
+ let btn2 = document.getElementById('btn2');
+ var para = document.getElementsByClassName('para');
 
-    let n1 = R1.value;
-    let n2 = R2.value;
+       btn2.onclick = function(){
+           console.log('clicked')
+           for(let i = 0; i<para.length;i++){
+               para[i].style.color = "red"
+           }
+       }
 
-    if(R1.checked == true){
-        alert(n1)
-    } else{
-        alert(n2)
-    }
-}
+       let paragraph = document.getElementsByTagName('p')
+
+       btn2.onclick = function(){
+           for(var i = 0; i<paragraph.length;i++){
+               paragraph[i].innerHTML = "modified";
+           }
+       }
+// btn1.onclick = function(){
+
+//     let n1 = R1.value;
+//     let n2 = R2.value;
+
+//     if(R1.checked == true){
+//         alert(n1)
+//     } else{
+//         alert(n2)
+//     }
+// }
 
 
 // btn.onclick = function(){
