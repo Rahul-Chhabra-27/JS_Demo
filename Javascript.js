@@ -40,7 +40,7 @@ console.log(ans)
              break;
              
         case 5 : 
-             document.write("<h1>thrusday</h1>")
+             document.write("<h1>thursday</h1>")
              break;
 
         case 6 :

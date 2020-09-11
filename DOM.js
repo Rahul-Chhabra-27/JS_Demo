@@ -16,6 +16,7 @@ let R2 = document.getElementById('rd2')
 
  let btn2 = document.getElementById('btn2');
  var para = document.getElementsByClassName('para');
+ 
 
        btn2.onclick = function(){
            console.log('clicked')
