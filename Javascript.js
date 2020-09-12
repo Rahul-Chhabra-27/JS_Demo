@@ -38,6 +38,7 @@ console.log(ans)
         case 4 :
              document.write("<h1>wednesday</h1>")
              break;
+
              
         case 5 : 
              document.write("<h1>thursday</h1>")
