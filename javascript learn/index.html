@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+       <p>This is a paragraph</p>
+       <p>This is a paragraph</p>
+       <p>This is a paragraph</p>
+       <p>This is a paragraph</p>
+       <p>This is a paragraph</p>
+       <p>This is a paragraph</p>
+       <button id='btn'> magic</button>
+       <script>
+           
+           
+         var btn = document.getElementById('btn');
+         btn.onmousemove = function(){
+             btn.innerText = 'change';
+         }
+         btn.onmouseout = function () {
+                btn.innerText = 'changed again';
+            }
+
+     var para = document.querySelectorAll('p');
+       para[5].addEventListener('click',change);
+      function change(){
+        var name =  prompt('hello enter your name')
+        var create = document.createElement('p');
+        create.innerText = 'Hello '+ name;
+        document.body.append(create);
+
+       for(var i = 0; i<para.length; i++){
+         para[i].style.color = 'red';
+         }
+      }
+       </script>
+</body>
+</html>
