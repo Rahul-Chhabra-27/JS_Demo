@@ -4,12 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   <style>
+       *{
+           padding:0;
+           margin: 0;
+           box-sizing: border-box;
+       }
+       #top_nav_bar{
+      /* background-color: black; */
+      height: 70px;
+      width: 1500px;
+      padding: 0;
+    
+          
+       }
+       h2{
+           float: left;
+           color: sienna;
+           font-size: larger 500px;
+           font-weight: bold 1000px;
+           padding-right: 10px;
+           padding-left: 10px;
+           margin-top: 20px;
+          
+           
+       }
+       h2:hover{
+           background-color: antiquewhite          
+       }
+   </style>
 </head>
 <body>
 
+    <div id=top_nav_bar>
+    
+        <a href="#"><h2 id="head1">Home</h2></a>
+        <a href="#"><h2 id='head2'>Services</h2></a>
+        <a href="#"><h2 id='head3'>contact</h2></a>
+        <a href="#"><h2 id='head4'>About</h2></a>
+    
+    </div>
+
+    <br>
+    <br>
+
     <h1>Dom manipulation / form Validation</h1>
   
-
+            
     <form action="image1.jpg" target="_blank">
     <input id = 'text' type = 'text' placeholder="enter your name" required>
     <br>
@@ -22,7 +63,14 @@
 
     <button id = 'btn' type="submit" onsubmit=" return submit()">submit</button>
     </form>
-    
+       
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
     <script src = "formValidation.js"></script>
 </body>
